@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "779178918431",
+    "firebase_url": "https://akb-uas.firebaseio.com",
+    "project_id": "aks-uas",
+    "storage_bucket": "akb-uas.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:357635577105:android:1fe07dfc94b3f66f",
+        "android_client_info": {
+          "package_name": "com.mwalidin.UAS_10117094"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "357635577105-gtvnapdendgf69khm5kgt396gj3d68v6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAt4ZeHmZuITcxqpG8qQjqcC0Hv151pxt8"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

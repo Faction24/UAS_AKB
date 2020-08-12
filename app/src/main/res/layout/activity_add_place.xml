@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.AddPlaceActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:padding="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Nama Lokasi"/>
+            <EditText
+                android:id="@+id/nama"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Nama Lokasi"
+                android:singleLine="true"
+                android:maxLines="1"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Alamat"/>
+            <EditText
+                android:id="@+id/alamat"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Alamat"
+                android:maxLines="3"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Deskripsi"/>
+            <EditText
+                android:id="@+id/deskripsi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Deskripsi"
+                android:maxLines="3"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Sumber"/>
+            <EditText
+                android:id="@+id/sumber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Sumber"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Harga"/>
+            <EditText
+                android:id="@+id/harga"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Harga"
+                android:singleLine="true"
+                android:maxLines="1"
+                android:inputType="number"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Latitude"/>
+            <EditText
+                android:id="@+id/lat"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Latitude"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Longtitude"/>
+            <EditText
+                android:id="@+id/lon"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Longtitude"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Telepon"/>
+            <EditText
+                android:id="@+id/phone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Telepon"
+                android:inputType="number"
+                android:singleLine="true"
+                android:maxLines="1"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Foto 1"/>
+            <EditText
+                android:id="@+id/foto1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Foto 1"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Foto 2"/>
+            <EditText
+                android:id="@+id/foto2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Foto 2"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Foto 3"/>
+            <EditText
+                android:id="@+id/foto3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Foto 3"/>
+            <Button
+                android:id="@+id/tambah_lokasi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Tambah"/>
+        </LinearLayout>
+    </ScrollView>
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#4CAF50</color>
+    <color name="colorPrimaryDark">#199c8e</color>
+    <color name="colorAccent">#4AA9E9</color>
+
+    <color name="profile_background">#4CAF50</color>
+    <color name="color_success">#23B9A9</color>
+    <color name="color_info">#4AA9E9</color>
+    <color name="color_primary">#62549a</color>
+    <color name="color_warning">#EAC459</color>
+    <color name="color_danger">#FF6C60</color>
+    <color name="white">#FFFFFF</color>
+</resources>

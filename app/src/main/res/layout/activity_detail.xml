@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@android:color/white"
+    tools:context=".activity.DetailActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            app:title="Wisata Title"
+            android:layout_height="?android:attr/actionBarSize"
+            android:background="@color/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+    </android.support.design.widget.AppBarLayout>
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="200dp">
+                <android.support.v4.view.ViewPager
+                    android:id="@+id/viewPager"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+                <LinearLayout
+                    android:layout_below="@id/viewPager"
+                    android:layout_marginTop="-20dp"
+                    android:id="@+id/viewPager_dots"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp">
+
+                <RelativeLayout
+                    android:layout_marginTop="18dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:id="@+id/deskripsi_label"
+                        android:textSize="18dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Deskripsi :"
+                        android:textAllCaps="true"
+                        android:textStyle="bold"
+                        android:layout_marginBottom="2dp"/>
+
+                    <TextView
+                        android:id="@+id/deskripsi"
+                        android:layout_below="@id/deskripsi_label"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Test"
+                        android:lineSpacingMultiplier="1"
+                        android:lineSpacingExtra="5dp"
+                        android:textSize="16dp"
+                        android:layout_marginBottom="10dp"/>
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_marginTop="18dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:id="@+id/deskripsi_label2"
+                        android:textSize="18dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Alamat :"
+                        android:textAllCaps="true"
+                        android:textStyle="bold"
+                        android:layout_marginBottom="2dp"/>
+
+                    <TextView
+                        android:id="@+id/alamat"
+                        android:layout_below="@id/deskripsi_label2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Test"
+                        android:lineSpacingMultiplier="1"
+                        android:lineSpacingExtra="5dp"
+                        android:textSize="16dp"
+                        android:layout_marginBottom="10dp"/>
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_marginTop="18dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:id="@+id/deskripsi_label3"
+                        android:textSize="18dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="sumber :"
+                        android:textAllCaps="true"
+                        android:textStyle="bold"
+                        android:layout_marginBottom="2dp"/>
+
+                    <TextView
+                        android:id="@+id/sumber"
+                        android:layout_below="@id/deskripsi_label3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Test"
+                        android:lineSpacingMultiplier="1"
+                        android:lineSpacingExtra="5dp"
+                        android:textSize="16dp"
+                        android:layout_marginBottom="10dp"/>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_marginTop="18dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <Button
+                            android:id="@+id/navigasi"
+                            android:layout_width="0dp"
+                            android:enabled="false"
+                            android:layout_weight="1"
+                            android:background="@drawable/btn_move_map"
+                            android:layout_height="wrap_content"
+                            android:text="Navigasi"
+                            android:layout_marginRight="8dp"
+                            android:drawableLeft="@drawable/ic_google_maps"
+                            android:textColor="@android:color/white"
+                            android:drawableTint="@android:color/white"
+                            android:layout_marginBottom="12dp"/>
+                        <Button
+                            android:id="@+id/call"
+                            android:layout_below="@+id/deskripsi_label5"
+                            android:layout_width="0dp"
+                            android:enabled="false"
+                            android:layout_marginLeft="8dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/btn_move_map"
+                            android:layout_height="wrap_content"
+                            android:text="Telepon"
+                            android:drawableLeft="@drawable/ic_call_black_24dp"
+                            android:textColor="@android:color/white"
+                            android:drawableTint="@android:color/white"
+                            android:layout_marginBottom="12dp"/>
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+
+            </LinearLayout>
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+</LinearLayout>
